@@ -20,8 +20,18 @@
         color: seagreen;
         font-weight: 700;
       }
-      a:visited{
-          color: red;
+      li:nth-child(2n + 1) {
+        color: royalblue;
+      }
+      h1::before {
+        content:"Hello, ";
+        color: green;
+        font-size: 1em;
+      }
+      h1::after {
+        content: " How are you?";
+        color: green;
+        font-size: 1em;
       }
     </style>
   </head>
@@ -42,8 +52,18 @@
     <input type="text" class="first-person" name="" id="" /><br />
     <input type="text" class="second-person" name="" id="" /><br />
     <input type="text" class="third-person" name="" id="" /><br />
-    <a href="https://www.google.com/">Google e jaw</a>
-    <a href="https://web.programming-hero.com/">Programming herote jaw</a>
-    <a href="https://www.searchenginejournal.com/link-building-new-website/307491/" target="_blank">never visited</a>
+    <br />
+    <ul>
+      <li>item-1</li>
+      <li>item-2</li>
+      <li>item-3</li>
+      <li>item-4</li>
+      <li>item-5</li>
+      <li>item-2</li>
+      <li>item-3</li>
+      <li>item-4</li>
+      <li>item-5</li>
+    </ul>
+    <h1>Nur Mohammad Rayhan</h1>
   </body>
 </html>
