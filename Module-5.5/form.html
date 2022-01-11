@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <style>
+      form {
+        width: 80%;
+        border: 1px solid lightgray;
+        margin: 0 auto;
+      }
+      p {
+        margin-left: 15px;
+      }
+      label {
+        display: inline-block;
+        margin: 10px 15px;
+      }
+      button{
+        margin: 15px 25px;
+      }
+      input[type=text], input[type=email], input[type=number]{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Admission form</h1>
+    <form action="">
+      <label for="student-name">
+        Student:
+        <input
+          type="text"
+          name="student-name"
+          id="student-name"
+          placeholder="Student name..."
+        />
+      </label>
+      <label for="father">
+        Father:
+        <input
+          type="text"
+          name="Father-name"
+          id="father"
+          placeholder="Father name..."
+        />
+      </label>
+      <label for="mother">
+        Mother:
+        <input
+          type="text"
+          name="Mother-name"
+          id="mother"
+          placeholder="Mother name..."
+        />
+      </label>
+      <label for="email">
+        Email:
+        <input
+          type="email"
+          name="student-email"
+          id="email"
+          placeholder="Email..."
+        />
+      </label>
+      <label for="mobile">
+        Mobile:
+        <input
+          type="number"
+          name="student-mobile"
+          id="mobile"
+          placeholder="Mobile Number..."
+        />
+      </label>
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="male"
+          ><input type="radio" name="gender" id="male" />Male</label
+        ><br>
+        <label for="female"
+          ><input type="radio" name="gender" id="female" />Female</label
+        >
+      </fieldset>
+      <p>Date of Birth: <input type="date" name="dateofBirth" id="" /></p>
+      <p>Upload your picture: <input type="file" name="coverPhoto" id="" /></p>
+      <p>
+        Select Your Country:
+        <select name="country" id="">
+          <option value="Bangladesh">Bangladesh</option>
+          <option value="india">India</option>
+          <option value="Pakistan">Pakistan</option>
+          <option value="Bhutan">Bhutan</option>
+          <option value="Nepal">Nepal</option>
+          <option value="Afganistan">Afganistan</option>
+          <option value="Miyanmar">Miyanmar</option>
+        </select>
+      </p>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
