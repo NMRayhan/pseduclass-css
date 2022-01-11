@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      div {
+      .test {
         background-color: darkorange;
         width: 200px;
         height: 200px;
         display: inline-block;
       }
-      div:hover {
+      .test:hover {
         background-color: orangered;
         color: white;
       }
@@ -24,7 +24,7 @@
         color: royalblue;
       }
       h1::before {
-        content:"Hello, ";
+        content: "Hello, ";
         color: green;
         font-size: 1em;
       }
@@ -33,18 +33,23 @@
         color: green;
         font-size: 1em;
       }
+
+      .swiming-div div{
+        border: 1px dashed salmon;
+        width: 250px;
+      }
     </style>
   </head>
   <body>
-    <div>
+    <div class="test">
       <h2>Amader Ghor 1</h2>
       <p>Ami amar Family</p>
     </div>
-    <div>
+    <div class="test">
       <h2>Amader Ghor 2</h2>
       <p>Ami amar Family</p>
     </div>
-    <div>
+    <div class="test">
       <h2>Amader Ghor 3</h2>
       <p>Ami amar Family</p>
     </div>
@@ -65,5 +70,10 @@
       <li>item-5</li>
     </ul>
     <h1>Nur Mohammad Rayhan</h1>
+    <section class="swiming-div">
+      <div><img class="boy" src="img/boy.svg" alt="" /></div>
+      <div><img class="ring" src="img/ring.svg" alt="" /></div>
+      <div><img class="water" src="img/water.svg" alt="" /></div>
+    </section>
   </body>
 </html>
