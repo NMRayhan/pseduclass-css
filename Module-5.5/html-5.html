@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML 5 explore</title>
     <style>
-        .audio-player{
-            width: 450px;
-            background-color: seagreen;
-            display: inline-block;
-            height: 50px;
-            padding: 20px;
-            border-radius: 10px;
-
-        }
+      .audio-player {
+        width: 450px;
+        background-color: seagreen;
+        display: inline-block;
+        height: 50px;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .video-player {
+        width: 50%;
+        margin: 0 auto;
+        height: 400px;
+        border-radius: 10px;
+      }
+      div {
+        display: grid;
+        place-items: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Exploring HTML 5</h2>
-    <audio controls loop muted class="audio-player">
-        <source src="media/audio/Goat-2.mp3" type="audio/mpeg"> 
-        <source src="media/audio/goat.mp3" type="audio/ogg"> 
-    </audio>
-</body>
+    <div>
+      <audio controls loop muted class="audio-player">
+        <source src="media/audio/Goat-2.mp3" type="audio/mpeg" />
+        <source src="media/audio/goat.mp3" type="audio/ogg" />
+      </audio>
+    </div>
+    <div>
+      <video class="video-player" autoplay controls loop width="80%">
+        <source src="media/video/video-2.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </body>
 </html>
