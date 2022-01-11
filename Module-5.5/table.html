@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exploring HTML Table</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid lightgray;
+        padding: 0px 7px;
+      }
+      tr:nth-child(even){
+          background-color: rgba(169, 215, 236, 0.507);
+      }
+      th{
+          padding: 7px;
+      }
+      tr:hover {
+        background-color: #96d4d4;
+      }
+      table {
+        width: 100%;
+        height: 200px;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Technology Founder and Salery
+      </caption>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>Name</th>
+          <th>Company</th>
+          <th>Salery</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Bill Gaites</td>
+          <td>Microsoft</td>
+          <td>$1500</td>
+        </tr>
+        
+        <tr>
+          <td>2</td>
+          <td>Stev jobs</td>
+          <td>Apple</td>
+          <td>$1300</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Larry page</td>
+          <td>Google</td>
+          <td>$1100</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Mark Zakerburg</td>
+          <td>Facebook</td>
+          <td>$1000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total Amount</td>
+          <td>$4900</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
