@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .nav-bar > a {
+        text-decoration: none;
+        color: black;
+        padding: 15px 10px;
+        font-size: 2em;
+        transition: background-color 0.25s, color 0.25s;
+      }
+      .nav-bar > a:hover{
+        background-color: lightslategray;
+        color: white;
+      }
+      i {
+        transition: transform 0.5s;
+      }
+      .icon i:hover {
+        color: white;
+        transform: scale(1.2);
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        height: 68px;
+        margin: auto;
+        background-color: lightseagreen;
+      }
+      .icon i {
+        padding: 10px;
+        border-radius: 50px;
+        margin-left: 15px;
+        font-size: 2.5em;
+        color: black;
+      }
+      main {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .login-form {
+        display: flex;
+        flex-direction: column;
+      }
+      .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .login-form input{
+          padding: 5px 10px;
+          font-size: 1.5em;
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+      .login-form button{
+          font-size: 1.5em;
+          background-color: lightseagreen;
+          border: none;
+          padding: 5px;
+          transition: background-color 0.25s, color 0.25s;
+      }
+      .login-form button:hover{
+          background-color: lightslategray;
+          color: white;
+          cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="icon">
+          <a href="#"><i class="fas fa-american-sign-language-interpreting"></i></a>
+        </span>
+        <span class="nav-bar">
+          <a href="#">Home</a>
+          <a href="#">Skills</a>
+          <a href="#">Certification</a>
+          <a href="#">Project</a>
+          <a href="#">Contact me</a>
+        </span>
+      </nav>
+    </header>
+    <main>
+      <section class="login-container">
+        <form action="" class="login-form">
+          <h2>Login</h2>
+          <input
+            type="text"
+            name="user-name"
+            placeholder="Username"
+            id=""
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            id=""
+            required
+          />
+          <button type="submit">Login</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
