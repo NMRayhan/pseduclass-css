@@ -17,7 +17,6 @@
       }
       .photo-frame {
         width: 400px;
-        border: 2px solid lightseagreen;
         border-radius: 5px;
         position: relative;
         margin: 15px;
@@ -26,13 +25,18 @@
         width: 100%;
         border-radius: 5px;
       }
+      .photo{
+        overflow: hidden;
+      }
       .photo-details {
         position: absolute;
         width: 400px;
         top: 0px;
       }
       .photo-details {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 1s, opacity 0.5s ease-in;
       }
       .photo-details h3{
         font-family: 'Poppins', sans-serif;
@@ -44,9 +48,14 @@
         font-weight: 100;
       }
       .photo-frame:hover .photo-details {
-        display: block;
+        visibility: visible;
+        opacity: 1;
         background-color: rgba(32, 178, 171, 0.315);
-        color: white;
+        color: white; 
+      }
+      .photo-frame:hover .photo img{
+        transform: scale(1.5);
+        transition: transform 1s;
       }
     </style>
   </head>
