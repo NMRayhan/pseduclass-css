@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Calendar</title>
+    <style>
+        .calendar{
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            grid-gap: 5px;
+            height: 500px;
+            color: white;
+            grid-template-rows: 50px;
+        }
+        .date{
+            padding: 5px;
+            background-color: sandybrown;
+            font-size: 1.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .other-month{
+            background-color: rgba(165, 133, 106, 0.767);
+        }
+        .offday{
+            background-color: rgb(250, 115, 115);
+        }
+        .day{
+            border: 1px solid lightskyblue;
+            border-radius: 5px;
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <section class="calendar">
+        <div class="date day">Sunday</div>
+        <div class="date day">Monday</div>
+        <div class="date day">Tuesday</div>
+        <div class="date day">Wednesday</div>
+        <div class="date day">Thursday</div>
+        <div class="date offday">Friday</div>
+        <div class="date day half-offday">Satday</div>
+        <div class="date other-month">29</div>
+        <div class="date other-month">30</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date offday">4</div>
+        <div class="date half-offday">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date offday">11</div>
+        <div class="date half-offday">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date offday">18</div>
+        <div class="date half-offday">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date offday">25</div>
+        <div class="date half-offday">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date other-month">1</div>
+        <div class="date other-month">2</div>
+        <div class="date other-month">3</div>
+    </section>
+</body>
+</html>
